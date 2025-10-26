@@ -1,13 +1,13 @@
+/* ==========================================================================
+   Elegant & Beautiful Portfolio Theme - Final Version
+   ========================================================================== */
 
-/* --- 1. Variables (Modern Tech Palette) --- */
+/* --- 1. Variables (Elegant Palette & Fonts) --- */
 :root {
-    /* This template uses a professional "Modern Tech" color scheme. */
-    --primary-color: #1A2A4C;   /* Midnight Blue */
-    --secondary-color: #3D5A80; /* Slate Blue */
-    --accent-color: #29B6F6;    /* Vivid Sky Blue */
-
-    /* --- Shared Variables (These usually don't need to change) --- */
-    --light-bg-color: #F8F9FA;
+    --primary-color: #212529;   /* Deep Charcoal */
+    --secondary-color: #495057; /* Muted Slate Gray */
+    --accent-color: #D4A373;    /* Warm Golden Ochre */
+    --light-bg-color: #F8F9FA;  /* Off-White/Light Cream */
     --white-color: #ffffff;
     --dark-text-color: #343A40;
     --light-text-color: #6c757d;
@@ -98,7 +98,7 @@ header p {
 
 /* --- 4. Navigation --- */
 nav {
-    background-color: rgba(26, 42, 76, 0.95); /* Adjusted for new primary color */
+    background-color: rgba(33, 37, 41, 0.95);
     backdrop-filter: blur(5px);
     position: sticky;
     top: 0;
@@ -278,8 +278,7 @@ nav ul li a:hover::after {
     color: var(--white-color);
 }
 
-
-/* --- 6. Tabular Skills Section --- */
+/* --- 6. Tabular Skills Section (NEW) --- */
 #skills .container {
     max-width: 1100px;
 }
@@ -391,7 +390,7 @@ nav ul li a:hover::after {
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--accent-color);
-    box-shadow: 0 0 0 3px rgba(41, 182, 246, 0.25); /* Adjusted for new accent color */
+    box-shadow: 0 0 0 3px rgba(212, 163, 115, 0.25);
 }
 
 .contact-form button.btn {
@@ -437,12 +436,14 @@ footer p {
         text-align: center;
     }
 
+    /* 👇 THIS IS THE NEW RULE TO FIX THE MOBILE VIEW 👇 */
     #projects .container {
-        padding: 0 5px; 
+        padding: 0 5px; /* Adds a little space on the sides */
     }
+    /* 👆 END OF NEW RULE 👆 */
 
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .skills-table {
