@@ -68,7 +68,7 @@
             <div class="about-text">
                 <p>I'm a Business Analyst with a background in accounting and an MSc in Business Analytics with Artificial Intelligence from the University of Dundee. I turn data into clear, practical recommendations that help organisations make better decisions.</p>
                 <p>Most recently, as a Business Analytics Intern at Edinburgh Dog and Cat Home, I analysed service and community data, built interactive dashboards and presented findings to stakeholders. As a Chartered Accountant (ICAN), I bring a strong understanding of costs, risk and financial performance to every analysis.</p>
-                <p>My projects span process improvement, credit risk, lending, retail and marketing, using SQL, Python, Power BI and Excel.</p>
+                <p>My projects span healthcare performance, process improvement, credit risk, lending, retail and marketing, using SQL Server, Python, Power BI and Excel.</p>
             </div>
         </div>
     </div>
@@ -79,6 +79,25 @@
     <div class="container">
         <h2>My Projects</h2>
         <div class="projects-grid">
+
+            <!-- Featured Project: NHS Scotland A&E Performance -->
+            <div class="project-card">
+                <img src="assets/images/nhs_dashboard.png" alt="NHS Scotland A&amp;E performance dashboard" class="fit-contain">
+                <div class="project-card-content">
+                    <span class="project-tag">Featured · Business Intelligence · SQL Server</span>
+                    <h3>NHS Scotland A&amp;E: Where the 4-Hour Target Is Missed</h3>
+                    <p>A business intelligence project on 19 years of real Public Health Scotland data: requirements, a SQL Server data warehouse with automated quality checks, and an interactive five-page dashboard.</p>
+                    <ul class="project-outcomes">
+                        <li>Showed emergency departments seeing <strong>63.5% of patients within 4 hours</strong>, against a 95% target and 87.4% in 2019</li>
+                        <li>Found <strong>12-hour waits up almost fifteen-fold</strong> since 2019, to 75,079 patients in 2025</li>
+                        <li>Built <strong>11 automated data quality checks</strong> that caught an impossible figure in the published data</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="https://github.com/lolabode/NHS-Scotland-AE-Performance" target="_blank" class="btn">View Case Study</a>
+                        <a href="nhs-ae-dashboard.html" target="_blank" class="btn btn-secondary">Open Dashboard</a>
+                    </div>
+                </div>
+            </div>
 
             <!-- Featured Project: Northbridge Invoice Process Review -->
             <div class="project-card">
@@ -257,3 +276,27 @@
                 <label for="subject">Subject</label>
                 <input type="text" name="subject" id="subject" placeholder="Subject" required>
             </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6" placeholder="Your message" required></textarea>
+            </div>
+
+            <!-- Honeypot spam protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Felicia Oyebode. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
