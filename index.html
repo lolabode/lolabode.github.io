@@ -1,330 +1,296 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Felicia Oyebode | Data and Business Analyst</title>
-<meta name="description" content="Felicia Oyebode, Chartered Accountant and data and business analyst. Projects in SQL, Power BI and Python on NHS, energy and finance data.">
-<link rel="icon" type="image/png" href="/favicon-32x32.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#F5F7FA;--surface:#FFFFFF;--ink:#102A43;--muted:#52667A;--rule:#D9E2EC;
-  --blue:#1F5F99;--blue-ink:#174A78;--check:#2E7D5B;--check-soft:#E3F1EA;--blue-soft:#E6EEF6;
-  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;--sans:"IBM Plex Sans","Segoe UI",system-ui,-apple-system,Arial,sans-serif;
-  color-scheme:light;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0E1A26;--surface:#15243A;--ink:#E7EEF6;--muted:#A3B4C6;--rule:#27384D;--blue:#6FA8DC;--blue-ink:#9CC3E8;--check:#6CC79A;--check-soft:#173A2C;--blue-soft:#1A2E47;color-scheme:dark}}
-:root[data-theme="dark"]{--paper:#0E1A26;--surface:#15243A;--ink:#E7EEF6;--muted:#A3B4C6;--rule:#27384D;--blue:#6FA8DC;--blue-ink:#9CC3E8;--check:#6CC79A;--check-soft:#173A2C;--blue-soft:#1A2E47;color-scheme:dark}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:var(--blue);text-underline-offset:3px}
-a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
-h1,h2,h3{font-family:var(--serif);font-weight:600;color:var(--ink);margin:0}
-h2{font-size:clamp(28px,3.2vw,38px);line-height:1.15;letter-spacing:-.01em}
-h3{font-size:24px;line-height:1.25}
-p{margin:0 0 14px}
-.lede{color:var(--muted);max-width:62ch}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicia Oyebode | Business Analyst Portfolio</title>
+    <meta name="description" content="Felicia Oyebode, Business Analyst and Business Intelligence Analyst. Portfolio of business analysis, BI and predictive analytics projects.">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/favicon-32x32.png">
 
-/* top bar */
-.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
-.bar .wrap{display:flex;align-items:center;gap:24px;height:64px}
-.brand{font-family:var(--serif);font-weight:600;font-size:20px;color:var(--ink);text-decoration:none;margin-right:auto}
-.links{display:flex;gap:22px}
-.links a{color:var(--muted);text-decoration:none;font-size:15px;font-weight:500}
-.links a:hover{color:var(--ink)}
-.btn{display:inline-flex;align-items:center;gap:8px;font:600 15px var(--sans);text-decoration:none;padding:11px 18px;border-radius:6px;border:1.5px solid var(--blue);cursor:pointer}
-.btn-solid{background:var(--blue);color:#fff}.btn-solid:hover{background:var(--blue-ink);border-color:var(--blue-ink)}
-.btn-line{background:transparent;color:var(--blue)}.btn-line:hover{background:var(--blue-soft)}
-.bar .btn{padding:8px 14px;font-size:14px}
+    <!-- Google Fonts for Elegant Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
-/* hero */
-.hero{padding:76px 0 64px}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center}
-.who{font-weight:500;color:var(--muted);margin-bottom:16px}
-.hero h1{font-size:clamp(36px,4.6vw,56px);line-height:1.08;letter-spacing:-.015em;margin-bottom:22px;max-width:17ch}
-.hero .lede{font-size:18.5px}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 18px}
-.avail{font-size:15px;color:var(--muted);display:flex;align-items:center;gap:9px}
-.avail i{width:9px;height:9px;border-radius:50%;background:var(--check);flex:none}
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-/* ledger panel: the signature element */
-.ledger{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:22px 24px 10px}
-.ledger h2{font-size:19px;margin-bottom:4px}
-.ledger .sub{font-size:14.5px;color:var(--muted);margin-bottom:10px}
-.entry{display:grid;grid-template-columns:30px 1fr;gap:4px 12px;padding:15px 0;border-top:1px solid var(--rule)}
-.tick{width:26px;height:26px;border-radius:50%;background:var(--check-soft);display:grid;place-items:center;margin-top:2px}
-.tick svg{width:14px;height:14px;stroke:var(--check);stroke-width:3;fill:none}
-.entry b{font-family:var(--serif);font-weight:600;font-size:21px;line-height:1.25;display:block}
-.entry span{font-size:15px;color:var(--muted)}
-.entry a{grid-column:2;font-size:14px;font-weight:500;margin-top:2px}
-@media (prefers-reduced-motion:no-preference){
- .entry{animation:post .5s ease-out both}.entry:nth-of-type(1){animation-delay:.25s}.entry:nth-of-type(2){animation-delay:.55s}.entry:nth-of-type(3){animation-delay:.85s}
- @keyframes post{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-}
+    <!-- Your Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-/* sections */
-section.block{padding:72px 0;border-top:1px solid var(--rule)}
-.head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:36px;flex-wrap:wrap}
-.head p{margin:8px 0 0}
-
-/* case studies */
-.case{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:44px;align-items:center;padding:36px 0}
-.case+.case{border-top:1px solid var(--rule)}
-.case:nth-of-type(even) .shot{order:2}
-.shot{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:10px;overflow:hidden}
-.shot img{border-radius:5px;width:100%;height:auto}
-.sector{font-size:14.5px;font-weight:500;color:var(--blue);margin-bottom:8px}
-.case h3{margin-bottom:12px}
-.case .lede{font-size:16.5px}
-.results{list-style:none;margin:16px 0 18px;padding:0}
-.results li{position:relative;padding-left:26px;margin-bottom:9px;font-size:16px}
-.results li::before{content:"";position:absolute;left:0;top:.52em;width:12px;height:7px;border-left:2.5px solid var(--check);border-bottom:2.5px solid var(--check);transform:rotate(-45deg)}
-.tools{font-size:14.5px;color:var(--muted);margin-bottom:16px}
-.case .actions{margin:0}
-.more{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}
-.mini{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:22px 24px}
-.mini h3{font-size:20px;margin-bottom:8px}
-.mini p{font-size:15.5px;color:var(--muted)}
-.mini a{font-weight:500;font-size:15px}
-
-/* about */
-.about{display:grid;grid-template-columns:260px minmax(0,1fr) 300px;gap:44px;align-items:start}
-.about img{border-radius:10px;aspect-ratio:4/5;object-fit:cover;width:100%;border:1px solid var(--rule)}
-.about .text p{max-width:62ch}
-.facts{margin:0;padding:0;list-style:none;border-top:1px solid var(--rule)}
-.facts li{padding:12px 0;border-bottom:1px solid var(--rule);font-size:15.5px}
-.facts b{display:block;font-weight:600}
-.facts span{color:var(--muted)}
-
-/* skills */
-.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
-.skills h3{font-size:20px;padding-bottom:10px;border-bottom:2px solid var(--blue);margin-bottom:12px}
-.skills ul{list-style:none;margin:0;padding:0}
-.skills li{padding:7px 0;border-bottom:1px solid var(--rule);font-size:16px}
-
-/* contact */
-.contact{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px}
-.ways{list-style:none;padding:0;margin:20px 0 0}
-.ways li{margin-bottom:12px}
-.ways a{display:inline-flex;align-items:center;gap:10px;font-weight:500;text-decoration:none}
-.ways svg{width:20px;height:20px;fill:currentColor}
-form{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:26px}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-label{display:block;font-size:14.5px;font-weight:500;margin-bottom:6px}
-input,textarea{width:100%;font:16px var(--sans);color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:11px 12px;margin-bottom:16px}
-textarea{resize:vertical;min-height:140px}
-footer{border-top:1px solid var(--rule);padding:26px 0 40px;color:var(--muted);font-size:14.5px}
-footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-
-@media (max-width:980px){
- .hero .wrap,.case,.contact{grid-template-columns:1fr;gap:32px}
- .case:nth-of-type(even) .shot{order:0}
- .about{grid-template-columns:200px minmax(0,1fr)}.facts{grid-column:1/-1}
- .skills{grid-template-columns:1fr 1fr}
-}
-@media (max-width:640px){
- body{font-size:16px}.wrap{padding:0 20px}
- .links{display:none}.hero{padding:44px 0 40px}
- .about,.skills,.more,.row{grid-template-columns:1fr}.about img{max-width:220px}
- section.block{padding:52px 0}
-}
-</style>
+    <!-- Extra styles for featured projects -->
+    <style>
+        .project-card img.fit-contain { object-fit: contain; background: #ffffff; padding: 10px; }
+        .project-tag { display: inline-block; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--primary-color); margin-bottom: 10px; }
+        .project-outcomes { list-style: none; padding: 0; margin: 0 0 25px 0; }
+        .project-outcomes li { position: relative; padding-left: 20px; margin-bottom: 10px; color: var(--light-text-color); line-height: 1.6; }
+        .project-outcomes li::before { content: "\2713"; position: absolute; left: 0; color: var(--primary-color); font-weight: 700; }
+        .project-outcomes strong { color: var(--primary-color); }
+        .amp { font-family: 'Lato', sans-serif; font-weight: 700; }
+        .social-links a.cv-button { font-size: 1rem; font-weight: 700; letter-spacing: 0.5px; border: 2px solid var(--accent-color); color: var(--accent-color); padding: 8px 18px; border-radius: 5px; vertical-align: middle; }
+        .social-links a.cv-button i { margin-right: 8px; }
+        .social-links a.cv-button:hover { background: var(--accent-color); color: var(--primary-color); }
+    </style>
 </head>
 <body>
 
-<header class="bar">
-  <div class="wrap">
-    <a class="brand" href="#top">Felicia Oyebode</a>
-    <nav class="links" aria-label="Main">
-      <a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-    </nav>
-    <a class="btn btn-line" href="assets/Felicia Oyebode.pdf" download="Felicia-Oyebode-CV.pdf">Download CV</a>
-  </div>
+<!-- HEADER SECTION -->
+<header>
+    <div class="container">
+        <h1>Felicia Oyebode </h1>
+        <p>Business Analyst | Business Intelligence Analyst</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/felicia-oyebode-587353197/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/lolabode" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="assets/Felicia Oyebode.pdf" download="Felicia-Oyebode-CV.pdf" class="cv-button" title="Download CV"><i class="fas fa-file-arrow-down"></i>Download CV</a>
+        </div>
+    </div>
 </header>
 
-<main id="top">
-<section class="hero">
-  <div class="wrap">
-    <div>
-      <p class="who">Felicia Oyebode, Chartered Accountant and data and business analyst</p>
-      <h1>I find the numbers that don&#8217;t add up, and turn the ones that do into decisions.</h1>
-      <p class="lede">I bring an accountant&#8217;s eye for detail to data work: building SQL data models, checking every figure before anyone relies on it, and presenting what it means in plain English. I&#8217;m completing an MSc in Business Analytics and Artificial Intelligence at the University of Dundee.</p>
-      <div class="actions">
-        <a class="btn btn-solid" href="#work">See my work</a>
-        <a class="btn btn-line" href="assets/Felicia Oyebode.pdf" download="Felicia-Oyebode-CV.pdf">Download CV</a>
-      </div>
-      <p class="avail"><i aria-hidden="true"></i>Available from January 2027 for data and business analyst roles in the UK</p>
-    </div>
-
-    <aside class="ledger" aria-labelledby="caught">
-      <h2 id="caught">Caught in my checks</h2>
-      <p class="sub">Problems my analysis found before they reached a decision.</p>
-      <div class="entry">
-        <span class="tick" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></svg></span>
-        <div><b>45 duplicate payments, worth £158,776</b><span>Hidden in 5,045 supplier invoices during an accounts payable review</span></div>
-        <a href="https://github.com/lolabode/Northbridge-Invoice-Process-Review">See the case study</a>
-      </div>
-      <div class="entry">
-        <span class="tick" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></svg></span>
-        <div><b>96 patients seen in time, out of 69</b><span>An impossible figure in official NHS Scotland data, flagged and kept out of every result</span></div>
-        <a href="https://github.com/lolabode/NHS-Scotland-AE-Performance">See the case study</a>
-      </div>
-      <div class="entry">
-        <span class="tick" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></svg></span>
-        <div><b>Coal power after the last coal plant closed</b><span>One of 26 implausible readings in 312,793 records of Great Britain&#8217;s grid data</span></div>
-        <a href="https://github.com/lolabode/gb-gas-flexible-generation">See the case study</a>
-      </div>
-    </aside>
-  </div>
-</section>
-
-<section class="block" id="work">
-  <div class="wrap">
-    <div class="head">
-      <div><h2>Selected work</h2><p class="lede">Each project starts with a real question, checks the data before trusting it, and ends with a recommendation.</p></div>
-    </div>
-
-    <article class="case">
-      <div class="shot"><img src="assets/images/nhs_dashboard.png" alt="NHS Scotland A&amp;E dashboard showing the share of patients seen within 4 hours since 2015" loading="lazy" width="1440" height="900"></div>
-      <div>
-        <p class="sector">Healthcare | SQL Server and business intelligence</p>
-        <h3>Where Scotland&#8217;s A&amp;E 4-hour target is being missed</h3>
-        <p class="lede">A SQL Server data warehouse and five-page dashboard built on 19 years of Public Health Scotland data, for national, health board and hospital managers.</p>
-        <ul class="results">
-          <li>63.5% of patients seen within 4 hours over the last year, against a 95% target and 87.4% in 2019</li>
-          <li>12-hour waits up almost fifteen-fold since 2019, to 75,079 patients in 2025</li>
-          <li>11 automated quality checks, validated against the published figures</li>
+<!-- NAVIGATION -->
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <p class="tools">SQL Server, star schema, Power BI (DAX), requirements and KPI design</p>
-        <div class="actions"><a class="btn btn-solid" href="nhs-ae-dashboard.html">Open the dashboard</a><a class="btn btn-line" href="https://github.com/lolabode/NHS-Scotland-AE-Performance">Read the case study</a></div>
-      </div>
-    </article>
-
-    <article class="case">
-      <div class="shot"><img src="assets/images/gb_energy_dashboard.png" alt="Dashboard of Great Britain's electricity generation mix since 2009" loading="lazy" width="1280" height="760"></div>
-      <div>
-        <p class="sector">Energy | Python and data profiling</p>
-        <h3>When Great Britain still needs gas power</h3>
-        <p class="lede">An analysis of 312,793 half-hourly readings of the national grid since 2009, showing when flexible gas plants are still essential as wind and solar grow.</p>
-        <ul class="results">
-          <li>Gas supplied 40.1% of power in the least windy periods of 2025, against 14.5% in the windiest</li>
-          <li>Gas is needed most on winter evenings: 38.3% in January and 34.3% between 7pm and 8pm</li>
-          <li>26 implausible readings in the published data flagged and documented</li>
-        </ul>
-        <p class="tools">Python (pandas), data quality profiling, dashboard design</p>
-        <div class="actions"><a class="btn btn-solid" href="https://lolabode.github.io/gb-gas-flexible-generation/">Open the dashboard</a><a class="btn btn-line" href="https://github.com/lolabode/gb-gas-flexible-generation">Read the case study</a></div>
-      </div>
-    </article>
-
-    <article class="case">
-      <div class="shot"><img src="assets/images/northbridge_dashboard.png" alt="Invoice approval dashboard showing on-time payment rate and duplicate payments" loading="lazy"></div>
-      <div>
-        <p class="sector">Finance operations | Business analysis</p>
-        <h3>Why invoices were paid late, and how to fix it</h3>
-        <p class="lede">A full process review for a simulated UK wholesaler: stakeholder interviews, process maps, requirements, a test plan and a business case.</p>
-        <ul class="results">
-          <li>Three root causes behind only 82.1% of invoices being paid on time, against a 95% target</li>
-          <li>45 duplicate payments worth £158,776 uncovered</li>
-          <li>A fix using software the business already owned, paying back in about 11 months</li>
-        </ul>
-        <p class="tools">BPMN, user stories and acceptance criteria, UAT, Python (pandas)</p>
-        <div class="actions"><a class="btn btn-solid" href="northbridge-dashboard.html">Open the dashboard</a><a class="btn btn-line" href="https://github.com/lolabode/Northbridge-Invoice-Process-Review">Read the case study</a></div>
-      </div>
-    </article>
-
-    <article class="case">
-      <div class="shot"><img src="assets/images/credit-risk-cost-analysis.png" alt="Chart of expected lending cost at different decision cut-offs" loading="lazy"></div>
-      <div>
-        <p class="sector">Lending | Predictive analytics</p>
-        <h3>Reducing a lender&#8217;s losses from missed repayments</h3>
-        <p class="lede">A model predicting which loan applicants are likely to miss repayments, and a recommendation on how the lender should act on it. Based on 10,000 simulated applications.</p>
-        <ul class="results">
-          <li>An estimated 42% cut in expected losses, from £3.60m to £2.10m</li>
-          <li>Savings held between 28% and 55% across different cost assumptions</li>
-          <li>A simpler, explainable model recommended over a more complex one</li>
-        </ul>
-        <p class="tools">Python (scikit-learn, TensorFlow), scenario analysis</p>
-        <div class="actions"><a class="btn btn-line" href="https://github.com/lolabode/Credit-Risk-loan-Default-Prediction">Read the case study</a></div>
-      </div>
-    </article>
-
-    <div class="more">
-      <div class="mini">
-        <h3>Activewear sales: where to grow next</h3>
-        <p>Four years of sales (6,250 orders) in Power BI. Five of nine products drive 80% of profit, the online store grew profit by 32.6% in 2024, and only 22% of customers buy twice.</p>
-        <a href="https://github.com/lolabode/Sales-Dashboard-Analysis-of-Active-Wear">Read the case study</a>
-      </div>
-      <div class="mini">
-        <h3>McDonald&#8217;s: what 21 years of accounts reveal</h3>
-        <p>Earnings per share rose 50% while profit stayed flat, because buybacks cut the share count by 26.3%. Over the same period, debt rose 3.4 times to $48bn and equity turned negative.</p>
-        <a href="https://github.com/lolabode/McDonalds-Financial-Statement-Analysis">Read the case study</a>
-      </div>
     </div>
-  </div>
+</nav>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="assets/images/FELICIA JPEG.jpeg" alt="Felicia Oyebode" class="profile-photo">
+            <div class="about-text">
+                <p>I'm a Business Analyst with a background in accounting and an MSc in Business Analytics with Artificial Intelligence from the University of Dundee. I turn data into clear, practical recommendations that help organisations make better decisions.</p>
+                <p>Most recently, as a Business Analytics Intern at Edinburgh Dog and Cat Home, I analysed service and community data, built interactive dashboards and presented findings to stakeholders. As a Chartered Accountant (ICAN), I bring a strong understanding of costs, risk and financial performance to every analysis.</p>
+                <p>My projects span energy, healthcare performance, process improvement, credit risk, retail and financial statement analysis, using SQL Server, Python, Power BI and Excel.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="block" id="about">
-  <div class="wrap about">
-    <img src="assets/images/FELICIA JPEG.jpeg" alt="Felicia Oyebode" loading="lazy">
-    <div class="text">
-      <h2 style="margin-bottom:18px">About me</h2>
-      <p>I trained as a Chartered Accountant, which taught me to question a number until I understand where it came from. I now apply that habit to data: profiling sources, building models people can trust, and explaining what the results mean for the people who have to act on them.</p>
-      <p>Most recently, as a Business Analytics Intern at Edinburgh Dog and Cat Home, I matched supporter and service data against Scotland&#8217;s deprivation index, built dashboards and presented the findings to staff. I&#8217;m now a business analyst on Amdari&#8217;s structured consultancy programme, writing requirements and user stories for client cases.</p>
-      <p>I&#8217;m looking for a data, business intelligence or business analyst role where accuracy matters, from January 2027.</p>
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+
+            <!-- Featured Project: GB Flexible Generation -->
+            <div class="project-card">
+                <img src="assets/images/gb_energy_dashboard.png" alt="GB flexible generation dashboard" class="fit-contain">
+                <div class="project-card-content">
+                    <span class="project-tag">Featured · Energy Data · Python</span>
+                    <h3>When Does Great Britain Still Need Gas?</h3>
+                    <p>An analysis of 312,793 half-hourly readings of Great Britain&#8217;s electricity generation from 2009 to 2026, showing when the grid still relies on flexible gas generation as wind and solar grow.</p>
+                    <ul class="project-outcomes">
+                        <li>Showed gas supplied <strong>40.1% of generation</strong> in the least windy periods of 2025, against 14.5% in the windiest</li>
+                        <li>Found gas is needed most on <strong>winter evenings</strong>: January (38.3%) and 7pm to 8pm (34.3%)</li>
+                        <li>Flagged <strong>26 implausible readings</strong> in the published data, including coal reported after GB&#8217;s last coal plant closed</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="https://github.com/lolabode/gb-gas-flexible-generation" target="_blank" class="btn">View Case Study</a>
+                        <a href="https://lolabode.github.io/gb-gas-flexible-generation/" target="_blank" class="btn btn-secondary">Open Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Project: NHS Scotland A&E Performance -->
+            <div class="project-card">
+                <img src="assets/images/nhs_dashboard.png" alt="NHS Scotland A&amp;E performance dashboard" class="fit-contain">
+                <div class="project-card-content">
+                    <span class="project-tag">Featured · Business Intelligence · SQL Server</span>
+                    <h3>NHS Scotland A<span class="amp">&amp;</span>E: Where the 4-Hour Target Is Missed</h3>
+                    <p>A business intelligence project on 19 years of real Public Health Scotland data: requirements, a SQL Server data warehouse with automated quality checks, and an interactive five-page dashboard.</p>
+                    <ul class="project-outcomes">
+                        <li>Showed emergency departments seeing <strong>63.5% of patients within 4 hours</strong>, against a 95% target and 87.4% in 2019</li>
+                        <li>Found <strong>12-hour waits up almost fifteen-fold</strong> since 2019, to 75,079 patients in 2025</li>
+                        <li>Built <strong>11 automated data quality checks</strong> that caught an impossible figure in the published data</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="https://github.com/lolabode/NHS-Scotland-AE-Performance" target="_blank" class="btn">View Case Study</a>
+                        <a href="nhs-ae-dashboard.html" target="_blank" class="btn btn-secondary">Open Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Project: Northbridge Invoice Process Review -->
+            <div class="project-card">
+                <img src="assets/images/northbridge_dashboard.png" alt="Invoice approval dashboard" class="fit-contain">
+                <div class="project-card-content">
+                    <span class="project-tag">Featured · Business Analysis · Process Improvement</span>
+                    <h3>Invoice Approval: Process Review</h3>
+                    <p>An end-to-end review of how a UK wholesaler approves supplier invoices, from stakeholder interviews and process maps to requirements, testing and a business case. Based on 5,045 simulated invoices.</p>
+                    <ul class="project-outcomes">
+                        <li>Found the <strong>three root causes</strong> behind only 82.1% of invoices being paid on time, against a 95% target</li>
+                        <li>Uncovered <strong>45 duplicate payments worth £158,776</strong></li>
+                        <li>Recommended a fix that <strong>pays back in about 11 months</strong>, using software the business already owned</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="https://github.com/lolabode/Northbridge-Invoice-Process-Review" target="_blank" class="btn">View Case Study</a>
+                        <a href="northbridge-dashboard.html" target="_blank" class="btn btn-secondary">Open Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Project: Credit Risk -->
+            <div class="project-card">
+                <img src="assets/images/credit-risk-cost-analysis.png" alt="Credit risk cost analysis chart" class="fit-contain">
+                <div class="project-card-content">
+                    <span class="project-tag">Featured · Business Analytics · Python</span>
+                    <h3>Credit Risk: Reducing Lending Losses</h3>
+                    <p>Predicting which loan applicants are likely to miss repayments, and recommending how a lender should act on it. Based on 10,000 simulated loan applications.</p>
+                    <ul class="project-outcomes">
+                        <li>Estimated a <strong>42% reduction in expected lending losses</strong> (£3.60m to £2.10m)</li>
+                        <li>Savings held at <strong>28%–55%</strong> across different business scenarios</li>
+                        <li>Recommended a <strong>simpler, easier-to-explain approach</strong> for transparent lending decisions</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="https://github.com/lolabode/Credit-Risk-loan-Default-Prediction" target="_blank" class="btn">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project: Activewear Sales Performance -->
+            <div class="project-card">
+                <img src="assets/images/Overview.png" alt="Activewear sales dashboard">
+                <div class="project-card-content">
+                    <span class="project-tag">Sales Analysis · Power BI</span>
+                    <h3>Activewear Sales: Where to Grow Next</h3>
+                    <p>Four years of sales data (6,250 orders) turned into an interactive Power BI dashboard and clear recommendations on which products, channels and customers to focus on.</p>
+                    <ul class="project-outcomes">
+                        <li>Found that <strong>5 of 9 products drive 80% of profit</strong>, led by jackets, sneakers and backpacks</li>
+                        <li>Spotted the <strong>online store as the fastest-growing channel</strong>, with profit up 32.6% in 2024</li>
+                        <li>Showed <strong>only 22% of customers buy more than once</strong>, making retention the biggest growth opportunity</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="https://github.com/lolabode/Sales-Dashboard-Analysis-of-Active-Wear" target="_blank" class="btn">View Case Study</a>
+                        <a href="https://github.com/lolabode/Sales-Dashboard-Analysis-of-Active-Wear/blob/HEAD/Wears%20Dashboard.pdf" target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project: McDonald's Financial Statement Analysis -->
+            <div class="project-card">
+                <img src="assets/images/Profitability Dashboard.png" alt="McDonald's Financial Statement Analysis">
+                <div class="project-card-content">
+                    <h3>McDonald's Financial Statement Analysis</h3>
+                    <p>This Financial Statement Analysis Dashboard provides a clear visualization of McDonald's key financial metrics over time, highlighting trends in profitability, expenses, and balance sheet performance. Built using Power BI, it delivers data-driven insights into the company's financial stability and operational efficiency.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/lolabode/McDonalds-Financial-Statement-Analysis" target="_blank" class="btn">Documentation</a>
+                        <a href="https://app.powerbi.com/groups/3b80171a-c9bf-46f5-9b9d-44cfc0c54c0b/reports/46bb5620-fa23-4ed0-8602-d90191ebace4/3611fa98c19bcefc336b?experience=power-bi" target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <ul class="facts">
-      <li><b>Chartered Accountant</b><span>Institute of Chartered Accountants of Nigeria, 2024</span></li>
-      <li><b>MSc Business Analytics and AI</b><span>University of Dundee, completing January 2027</span></li>
-      <li><b>Based in Scotland</b><span>Open to roles across the UK and remote</span></li>
-      <li><b>Languages</b><span>English (fluent), French (intermediate)</span></li>
-    </ul>
-  </div>
 </section>
 
-<section class="block" id="skills">
-  <div class="wrap">
-    <div class="head"><h2>Skills</h2></div>
-    <div class="skills">
-      <div><h3>Business analysis</h3><ul><li>Requirements gathering</li><li>Process mapping (BPMN)</li><li>User stories and acceptance criteria</li><li>Gap and stakeholder analysis</li><li>Business cases and options appraisal</li><li>User acceptance testing</li></ul></div>
-      <div><h3>Data and BI</h3><ul><li>SQL and SQL Server</li><li>Data modelling (star schema)</li><li>Data quality and validation</li><li>Power BI (DAX, Power Query)</li><li>Advanced Excel</li><li>Dashboards and reporting</li></ul></div>
-      <div><h3>Analytics</h3><ul><li>Python (pandas, scikit-learn)</li><li>R</li><li>Predictive analytics</li><li>Cost-benefit and scenario analysis</li><li>Financial statement analysis</li><li>Jira, Confluence, Visio</li></ul></div>
+<!-- SKILLS SECTION -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-table">
+
+            <!-- Column 1: Business Analysis -->
+            <div class="skill-column">
+                <div class="skill-header">
+                    <i class="fas fa-sitemap"></i>
+                    <h3>Business Analysis</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>Requirements Gathering</li>
+                    <li>Process Mapping (BPMN)</li>
+                    <li>User Stories &amp; Acceptance Criteria</li>
+                    <li>Gap &amp; Stakeholder Analysis</li>
+                    <li>Business Cases &amp; Options Appraisal</li>
+                    <li>UAT</li>
+                    <li>Jira, Confluence, Visio</li>
+                </ul>
+            </div>
+
+            <!-- Column 2: Data & BI -->
+            <div class="skill-column">
+                <div class="skill-header">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Data &amp; BI</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>SQL</li>
+                    <li>Power BI (DAX, Power Query)</li>
+                    <li>Advanced Excel</li>
+                    <li>Dashboards &amp; Reporting</li>
+                    <li>Data Modelling</li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Analytics -->
+            <div class="skill-column">
+                <div class="skill-header">
+                    <i class="fas fa-magnifying-glass-chart"></i>
+                    <h3>Analytics</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>Python (Pandas, Scikit-learn)</li>
+                    <li>R</li>
+                    <li>Predictive Analytics</li>
+                    <li>Cost-Benefit &amp; Scenario Analysis</li>
+                    <li>Data Cleaning</li>
+                </ul>
+            </div>
+
+        </div>
     </div>
-  </div>
 </section>
 
-<section class="block" id="contact">
-  <div class="wrap contact">
-    <div>
-      <h2>Get in touch</h2>
-      <p class="lede" style="margin-top:12px">If you&#8217;re hiring for a data, BI or business analyst role, I&#8217;d be glad to talk.</p>
-      <ul class="ways">
-        <li><a href="mailto:amfelicia9@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7zm16 2.9l-8 5-8-5V17h16z"/></svg>amfelicia9@gmail.com</a></li>
-        <li><a href="https://www.linkedin.com/in/felicia-oyebode/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21.6 8.65 22 11.2 22 14.5V21h-4v-5.8c0-1.4 0-3.2-1.95-3.2S14 13.5 14 15.1V21h-4z"/></svg>LinkedIn</a></li>
-        <li><a href="https://github.com/lolabode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .5z"/></svg>GitHub</a></li>
-      </ul>
-    </div>
-    <form action="https://formsubmit.co/omololafeoyebode@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="New message from your portfolio">
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-      <div class="row">
-        <div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
-        <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-      </div>
-      <label for="subject">Subject</label><input id="subject" name="subject" required>
-      <label for="message">Message</label><textarea id="message" name="message" required></textarea>
-      <button type="submit" class="btn btn-solid">Send message</button>
-    </form>
-  </div>
-</section>
-</main>
+<!-- CONTACT FORM SECTION -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Send me a message</h2>
+        <form action="https://formsubmit.co/omololafeoyebode@gmail.com" method="POST" class="contact-form">
+            <p>Interested in collaborating or have questions about my work? Kindly reach out!</p>
 
-<footer><div class="wrap"><span>&copy; 2026 Felicia Oyebode</span><span>Case studies use real public data unless marked as simulated.</span></div></footer>
+            <input type="hidden" name="_subject" value="New message from your portfolio">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6" placeholder="Your message" required></textarea>
+            </div>
+
+            <!-- Honeypot spam protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Felicia Oyebode. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>
